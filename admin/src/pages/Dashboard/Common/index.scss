@@ -1,0 +1,97 @@
+@import "../../../scss/index.scss";
+
+.commons {
+  padding: 16px;
+  @include tablet {
+    padding: 12px;
+  }
+
+  .common {
+    display: flex;
+    flex-direction: column;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      @include tablet {
+        padding: 6px 16px;
+      }
+
+      &__left {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        h1 {
+          color: rgb(255, 0, 0);
+          font-weight: 900;
+          font-size: 30px;
+          @include tablet {
+            font-size: 26px;
+          }
+        }
+
+        p {
+          color: rgb(255, 0, 0);
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+
+      &__right {
+        font-weight: 300;
+        font-size: 22px;
+      }
+    }
+
+    &-bottom {
+      padding: 6px;
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      @include tablet {
+        padding: 4px;
+      }
+    }
+
+    .bgblue {
+      background-color: rgb(0, 255, 255);
+    }
+
+    .bgblue1 {
+      background-color: rgb(0, 190, 190);
+    }
+
+    .bgyellow {
+      background-color: rgb(248, 255, 108);
+    }
+
+    .bgyellow1 {
+      background-color: rgb(255, 223, 43);
+    }
+
+    .bggreen {
+      background-color: rgb(129, 253, 154);
+    }
+
+    .bggreen1 {
+      background-color: rgb(113, 253, 57);
+    }
+
+    .bgorange {
+      background-color: rgb(253, 226, 129);
+    }
+
+    .bgorange1 {
+      background-color: rgb(253, 188, 57);
+    }
+  }
+}

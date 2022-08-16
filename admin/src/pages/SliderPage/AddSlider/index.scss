@@ -1,0 +1,84 @@
+@import "../../../scss/index.scss";
+
+.AddSlider {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  @include tablet{
+    width: 100%;
+  }
+
+  .bg-for{
+    &__main{
+      padding: 12px 30px 30px;
+      @include tablet{
+        padding: 6px 30px 30px;
+      }
+    }
+  }
+
+  .gender-field .ant-select-selection-placeholder {
+    color: #888;
+  }
+
+  .ant-select-selector {
+    border: none !important;
+  }
+
+  .ant-input-password-icon {
+    color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+.input-form-common,
+.col-item {
+  width: 100%;
+}
+
+textarea.ant-input {
+  min-height: 120px !important;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.formAdd {
+  padding: 30px 24px;
+}
+
+.colForm {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.colForm2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.labelForm {
+  padding-left: 12px;
+  font-size: 18px;
+  color: rgb(61, 61, 61);
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 140px;
+  margin-bottom: 30px;
+  text-transform: none;
+  margin-right: 20px;
+}
+
+.btn.btn1{
+  background-color: rgb(212, 212, 212);
+  color: rgb(57, 57, 57);
+}

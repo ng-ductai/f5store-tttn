@@ -1,0 +1,44 @@
+@import "../../scss/index.scss";
+
+.customers {
+  width: 100%;
+
+  &__title {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px 10px;
+    @include tablet {
+      padding-top: 8px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      @include tablet {
+        margin-left: 120px;
+      }
+    }
+  }
+
+  @include tablet {
+    .ant-table-wrapper {
+      max-width: max-content !important;
+    }
+
+    .ant-table {
+      width: 100%;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+
+      .ant-table-container {
+        min-width: 1260px;
+        margin-bottom: 10px;
+
+        .ant-table-content {
+          width: max-content;
+        }
+      }
+    }
+  }
+}

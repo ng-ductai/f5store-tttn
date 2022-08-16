@@ -1,0 +1,34 @@
+$main-bg: #fff;
+$main-color: #4267b2;
+$txt-main-color: #000;
+$txt-second-color: #8d8d8d;
+$txt-white: #fff;
+
+$btn-main-bg: $main-color;
+$btn-main-color: #fff;
+$btn-search: #7690da;
+$btn-search-hover: #7d98e2;
+
+$header-height: 70px;
+$header-tablet-height: 65px;
+$header-mobile-height: 50px;
+
+$sideber-width: 260px;
+$sideber-tablet-width: 200px;
+
+$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+$colors: (
+  "blue": #4267b2,
+  "orange": #fbb96b,
+  "pink": #fe7e73,
+  "white": #fff,
+  "black": #000,
+  "main": $main-color,
+);
+
+$mobile-width: 600px;
+$tablet-width: 1024px;
+
+$number: (0, 1, 2, 3, 4, 5, 6, 7, 8);
+

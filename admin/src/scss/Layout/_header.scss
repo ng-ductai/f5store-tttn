@@ -1,0 +1,64 @@
+.header {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  z-index: 100;
+  transition: height 0.3s ease;
+  padding-left: 25px;
+  padding-right: 30px;
+  text-align: center;
+  @include tablet {
+    padding: 0 10px;
+    height: $header-tablet-height;
+  }
+
+  .header-menu {
+    margin-top: auto;
+    margin-bottom: auto;
+    @include flex(center, space-between);
+    height: 100%;
+  }
+
+  &-left {
+    &__avt {
+      width: 55px;
+      height: 55px;
+      @include tablet {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    &__title {
+      font-size: 34px;
+      font-weight: 600 !important;
+      color: rgb(255, 255, 255);
+      padding-left: 20px;
+      @include tablet {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &-right {
+    @include flex(center, space-between);
+
+    &__admin {
+      .title {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+
+    &__btn {
+      margin-right: 40px;
+      @include tablet {
+        margin-right: 10px;
+      }
+    }
+  }
+}

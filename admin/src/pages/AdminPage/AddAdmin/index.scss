@@ -1,0 +1,77 @@
+@import "../../../scss/index.scss";
+
+.AddAdmin {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  @include tablet{
+    width: 100%;
+  }
+
+  .bg-for{
+    &__main{
+      padding: 12px 30px 30px;
+      @include tablet{
+        padding: 6px 30px 30px;
+      }
+    }
+  }
+
+  .gender-field .ant-select-selection-placeholder {
+    color: #888;
+  }
+
+  .ant-select-selector {
+    border: none !important;
+  }
+
+  .ant-input-password-icon {
+    color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+.input-form-common {
+  width: 440px;
+}
+.title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.formAdd {
+  padding: 20px 24px;
+}
+
+
+.colForm {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.labelForm {
+  padding-right: 14px;
+  font-size: 18px;
+  color: rgb(61, 61, 61);
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 140px;
+  margin-bottom: 30px;
+  text-transform: none;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.btn.btn2{
+  background-color: rgb(217, 217, 217);
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+

@@ -1,0 +1,99 @@
+@import "../../scss/index.scss";
+
+.product {
+  width: 100%;
+
+  &__title {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 10px;
+    @include tablet {
+      padding: 3px 0 8px;
+      justify-content: flex-start;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 22px;
+      @include tablet {
+        margin-left: 55px;
+        margin-right: 165px;
+      }
+    }
+
+    &-add {
+      border: none;
+      padding: 8px 14px;
+      background-color: rgb(188, 255, 199);
+      color: rgb(0, 0, 0);
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+
+      .icon {
+        font-size: 13px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  @include tablet {
+    .ant-table-wrapper {
+      max-width: max-content !important;
+    }
+
+    .ant-table {
+      width: 100%;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+
+      .ant-table-container {
+        min-width: 1360px;
+        margin-bottom: 10px;
+
+        .ant-table-content {
+          width: max-content;
+        }
+      }
+    }
+  }
+}
+
+.addProduct{
+  &-main{
+    padding: 20px;
+    @include tablet{
+      padding: 10px 0;
+    }
+  }
+}
+
+.nameProduct {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  font-size: 16px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 20px;
+}
+
+.ant-modal-footer {
+  padding: 10px 40px 25px;
+}
+
+.ant-modal-header {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.discount {
+  height: 300px;
+}

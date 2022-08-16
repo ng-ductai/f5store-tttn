@@ -1,0 +1,45 @@
+.not-found {
+    width: 81%;
+    height: 100vh;
+    color: $txt-second-color;
+    font-size: 100%;
+    line-height: 1.5;
+    position: relative;
+    left: 10%;
+
+    &__btn {
+        font-weight: 300;
+        color: $txt-second-color;
+        font-size: 1.2em;
+        text-decoration: none;
+        border: 1px solid $txt-second-color;
+        padding: 0.5em;
+        border-radius: 3px;
+        float: left;
+        margin: 6em 0 0 -155px;
+        left: 50%;
+        position: relative;
+        transition: all 0.3s linear;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $btn-main-bg;
+            color: $txt-white;
+        }
+        & i {
+            margin-right: 7px;
+        }
+    }
+
+    &__title {
+        font-size: 2em;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    &__error-number {
+        text-align: center;
+        font-size: 15em;
+        font-weight: 100;
+    }
+}

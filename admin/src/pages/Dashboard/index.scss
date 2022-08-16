@@ -1,0 +1,48 @@
+@import "../../scss/index.scss";
+
+.home {
+  width: 100%;
+  &__title {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px 12px;
+    text-align: center;
+    @include tablet {
+      padding: 0px 50px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 28px;
+      margin: auto;
+      padding: auto;
+    }
+  }
+
+  .total {
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_title {
+      font-size: 40px;
+      font-weight: 600;
+      color: rgb(57, 57, 57);
+      padding-bottom: 20px;
+      padding-top: 30px;
+    }
+
+    &_price {
+      font-size: 50px;
+      font-weight: 700;
+      color: red;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.doughnutSize {
+  height: 265px !important;
+}

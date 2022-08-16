@@ -1,0 +1,59 @@
+.sidebar {
+  background-color: rgb(251, 251, 255);
+  position: fixed;
+  top: $header-height;
+  left: 0;
+  width: $sideber-width;
+  z-index: 60;
+  transition: height 0.3s ease;
+  height: 100vh;
+
+  @include tablet {
+    width: $sideber-tablet-width;
+  }
+
+  &__wrapper {
+    color: #555;
+    box-shadow: 0px 0px 15px -10px #f2f2f2;
+
+    &_menu {
+      padding: 10px 24px 20px;
+      @include tablet {
+        padding: 10px 10px 20px;
+      }
+
+      .menu-item {
+        margin: 18px 0;
+        @include flex(center, flex-start);
+        font-size: 20px;
+        font-weight: 600;
+        color: #222;
+
+        @include tablet {
+          margin: 10px 0;
+          font-size: 18px;
+        }
+
+        &:first-child {
+          margin-top: 10px;
+        }
+
+        &__icon {
+          padding-right: 12px;
+          @include tablet {
+            padding-right: 8px;
+          }
+        }
+      }
+
+      .menu-item.active {
+        color: $main-color;
+        border-right: 3px solid $main-color;
+      }
+
+      .menu-item:hover {
+        color: $main-color;
+      }
+    }
+  }
+}

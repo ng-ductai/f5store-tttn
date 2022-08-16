@@ -1,0 +1,94 @@
+.btn {
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+  color: $btn-main-color;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+  @include mobile {
+    font-size: 1rem;
+  }
+
+  &__txt,
+  &__icon {
+    display: block;
+    transition: transform 0.5s ease;
+    color: #fff;
+  }
+  &__txt {
+    padding: 1rem 2rem;
+  }
+
+  &__icon {
+    @include flex(center, center);
+    font-size: 1.4rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);
+    color: #fff;
+  }
+  .move {
+    animation: move 0.5s infinite;
+    transition: animation 0.5s ease;
+  }
+
+  &-animate:hover &__txt {
+    transform: translateX(100%);
+  }
+
+  &-animate:hover &__icon {
+    transform: translateX(0);
+  }
+
+  .bx-tada {
+    color: red;
+  }
+
+  &-sm {
+    font-size: 1rem;
+  }
+
+  &-sm &__txt {
+    padding: 0.7rem 1.5rem;
+    color: #fff;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ant-btn-link {
+  color: #000;
+}
+
+.ant-btn {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ant-table {
+  font-size: 16px;
+}

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 13px;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: unset;
+}
+
+a:hover {
+  color: $main-color;
+}
+
+strong {
+  margin: 5px;
+  &:hover {
+    color: $main-color;
+  }
+}
+
+.App {
+  background-color: rgb(248, 248, 248);
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  margin: $header-height 0 0;
+}
+
+.route {
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 16px 20px;
+  margin-left: $sideber-width;
+  @include tablet {
+    margin-left: $sideber-tablet-width;
+    padding: 10px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --main-color: #0b0b0b;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+  margin: auto;
+}
+
+.ant-modal-title {
+  font-size: 22px;
+  text-align: center;
+}
+
+.ant-card-body {
+  height: 155px;
+}
+
+.ant-card-head-title {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+label.ant-radio-wrapper {
+  margin-right: 40px;
+}
+
+ul.slick-dots.slick-dots-bottom {
+  visibility: hidden;
+}
+
+.ant-drawer-body {
+  padding: 10px 0;
+}
+
+.ant-drawer-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: visible;
+}
+.ant-btn > .anticon + span,
+.ant-btn > span + .anticon {
+  margin-left: 8px;
+  display: inline;
+  margin-right: 75%;
+}
+.ant-drawer-content {
+  overflow: visible;
+}
+
+.ant-btn-primary {
+  background-color: #3a5dd9;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #3a5dd9;
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2);
+  }
+  border: none;
+}
+
+.ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+.order_status {
+  font-size: 12px;
+  margin-left: 14px;
+  font-weight: 600;
+  font-family: sans-serif;
+
+  &-pending {
+    color: #e2c801;
+  }
+  &-cancel {
+    color: #d00000;
+  }
+  &-success {
+    color: #119803;
+  }
+  span.title-status {
+    margin-right: 5px;
+  }
+}
