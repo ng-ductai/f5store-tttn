@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 13px;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+p,
+a {
+  margin: 0;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: unset;
+}
+
+a:hover {
+  color: $main-color;
+}
+
+strong {
+  margin: 5px;
+  &:hover {
+    color: $main-color;
+  }
+}
+
+.App {
+  background-color: $main-bg;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+  margin: auto;
+}
+
+.main {
+  margin-top: $header-height;
+  margin-bottom: 30px;
+  min-height: auto;
+
+  @include tablet {
+    margin-top: $header-tablet-height;
+    padding: 0 6px;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+.ant-btn-primary {
+  background-color: #3a5dd9;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #3a5dd9;
+    -webkit-filter: brightness(1.2);
+    filter: brightness(1.2);
+  }
+  border: none;
+}
+
+.ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+.ant-modal-title {
+  font-size: 22px;
+  text-align: center;
+}
+
+.ant-card-body {
+  height: 155px;
+}
+
+.ant-card-head-title {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+label.ant-radio-wrapper {
+  margin-right: 40px;
+}
+
+ul.slick-dots.slick-dots-bottom {
+  visibility: hidden;
+}
+
+.ant-btn > .anticon + span,
+.ant-btn > span + .anticon {
+  margin-left: 8px;
+  display: inline;
+  margin-right: 75%;
+}
+
+@each $color, $val in $colors {
+  .color-#{$color} {
+    color: $val;
+  }
+  .bg-#{$color} {
+    background-color: $val;
+  }
+}

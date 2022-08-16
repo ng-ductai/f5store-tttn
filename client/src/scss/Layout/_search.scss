@@ -1,0 +1,8 @@
+.search-bar {
+  & input {
+    outline: none;
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}

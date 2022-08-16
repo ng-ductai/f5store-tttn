@@ -1,0 +1,88 @@
+@import "../../scss/index.scss";
+
+.filter {
+  padding: 12px 0;
+  background-color: #fff;
+
+  &-header {
+    border-bottom: solid 1px #dcdcdc;
+    padding: 0 16px 6px 16px;
+    display: flex;
+    justify-content: space-between;
+
+    &_title {
+      font-size: 22px;
+      padding-right: 20px;
+      min-width: 100px;
+    }
+  }
+
+  &-item {
+    display: flex;
+    justify-content: flex-start;
+    margin: 3px 0;
+
+    &_name {
+      min-width: 150px;
+      font-size: 17px;
+    }
+  }
+
+  .filter-btn {
+    border: solid 1px #3a5dd8;
+    color: #fff;
+    background-color: #3a5dd8;
+    transition: all 0.25s;
+  }
+
+  .ant-tag-hidden {
+    display: inline;
+  }
+}
+
+.ant-tag {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 8px 8px 0;
+  padding: 3px 6px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.search {
+  &-title {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@include tablet {
+  .filter {
+    padding: 12px 0;
+
+    &-header {
+      padding: 0 16px 0px 16px;
+
+      &_title {
+        font-size: 20px;
+        padding-bottom: 6px;
+      }
+    }
+
+    &-item {
+      margin: 6px 0;
+
+      &_name {
+        min-width: 130px;
+      }
+    }
+  }
+
+  .search {
+    &-title {
+      font-size: 18px;
+      padding: 8px;
+    }
+  }
+}

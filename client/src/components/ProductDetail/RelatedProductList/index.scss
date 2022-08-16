@@ -1,0 +1,22 @@
+.relate {
+  .arrow {
+    position: absolute;
+    font-size: 45px;
+    color: #ccc;
+    top: 50%;
+    transform: translateY(-24px);
+    &-left {
+      left: 0;
+    }
+    &-right {
+      right: 0;
+    }
+    &:hover {
+      font-size: 50px;
+      transition: all ease 0.3s;
+    }
+    &.disabled {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.detail {
+  .underline-title {
+    &::after {
+      width: 48px;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

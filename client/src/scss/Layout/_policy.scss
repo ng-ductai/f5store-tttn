@@ -1,0 +1,48 @@
+.policy {
+  @include flex(center, flex-start);
+  padding: 16px 16px 16px 0;
+  box-shadow: $box-shadow;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  color: $main-color;
+  height: 100px;
+  &:hover {
+    transform: translateY(-6px);
+  }
+  @include tablet {
+    height: 70px;
+    padding: 10px 10px 10px 0;
+  }
+
+  &-icon {
+    @include flex(center, center);
+    width: 36%;
+    color: $main-color;
+
+    @include tablet {
+      width: 30%;
+    }
+
+    i {
+      font-size: 34px;
+    }
+  }
+
+  &-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    &__name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      @include tablet {
+        margin-bottom: 0px;
+      }
+    }
+    &__description {
+      font-size: 15px;
+      color: $txt-second-color;
+    }
+  }
+}

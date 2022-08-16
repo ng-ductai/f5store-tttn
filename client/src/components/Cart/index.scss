@@ -1,0 +1,51 @@
+@import "../../scss/index.scss";
+
+.cart {
+  &-quan {
+    font-size: 20px;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #777;
+    padding: 10px 16px;
+  }
+
+  &-clear {
+    font-size: 18px;
+  }
+
+  .flex-1 {
+    flex: 1;
+  }
+
+  .flex-2 {
+    flex: 2;
+  }
+
+  .flex-5 {
+    flex: 5;
+  }
+}
+
+@include tablet {
+  .cart {
+    &-quan {
+      font-size: 18px;
+    }
+
+    &-title {
+      font-size: 16px;
+    }
+
+    &-clear {
+      font-size: 16px;
+    }
+
+    .flex-5 {
+      flex: 4;
+    }
+  }
+}

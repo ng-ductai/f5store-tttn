@@ -1,0 +1,362 @@
+@import "../../scss/index.scss";
+
+.account {
+  padding: 10px 0;
+
+  &-side {
+    padding: 10px 16px 0 6px;
+
+    &_intro {
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      border-bottom: solid 1px #ddd;
+
+      img {
+        width: 46px;
+        height: 46px;
+      }
+
+      .avt {
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+
+      .name {
+        color: #333;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &-menu {
+    margin-top: 12px;
+
+    &_item {
+      padding: 8px 0;
+
+      &.active,
+      &:hover,
+      &:active {
+        & > * {
+          color: $main-color;
+          font-weight: bold;
+        }
+      }
+
+      .icons {
+        color: #888;
+        margin-right: 12px;
+        font-size: 24px;
+      }
+
+      .title {
+        font-size: 19px;
+      }
+
+      .submenu {
+        margin-left: 37px;
+      }
+    }
+  }
+
+  &-component {
+    padding: 12px 20px 20px;
+
+    &_item {
+      margin-bottom: 13px;
+      padding-left: 12px;
+    }
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .inputRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0;
+  }
+
+  .profile-left {
+    border-right: 1px solid rgb(201, 201, 201);
+    margin: 30px 0;
+  }
+
+  .profile-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px 0;
+
+    .avt-r {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 30px;
+    }
+
+    .upload {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .update-left {
+    margin: 30px 0;
+  }
+
+  .update-right {
+    margin: 30px 0;
+  }
+
+  .addressList {
+    &-item {
+      padding: 16px 16px;
+      margin-top: 16px;
+
+      &_row {
+        display: flex;
+        margin-bottom: 6px;
+
+        .flex1 {
+          padding-right: 20px;
+          flex: 1;
+          text-align: end;
+          font-size: 16px;
+        }
+
+        .flex3 {
+          display: flex;
+          flex: 3;
+          font-size: 16px;
+
+          &_btn {
+            font-size: 12px;
+            padding: 2px 6px;
+            margin-left: 40px;
+            border: solid 1px #00bfa5;
+            color: rgb(255, 255, 255);
+            background: #00bfa5;
+          }
+        }
+      }
+
+      &_btn {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-right: 30px;
+        margin: 4px 0;
+      }
+    }
+  }
+}
+
+.borderTop {
+  border-top: 1px solid #dddddd;
+}
+
+.borderBot {
+  border-bottom: 1px solid #dddddd;
+}
+
+.disable {
+  display: none;
+}
+
+.boder {
+  border: none;
+}
+
+.ant-modal-footer {
+  padding: 10px 24px 24px !important;
+  border-top: 1px solid #e0e0e0;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-btn {
+    &__see {
+      color: #000000;
+      font-size: 16px;
+    }
+
+    &__cancel {
+      color: #ff0000;
+      font-size: 16px;
+
+      &:hover {
+        color: #ff0000;
+      }
+    }
+  }
+}
+
+.order_status {
+  font-size: 12px;
+  margin-left: 14px;
+  font-weight: 600;
+
+  &-pending {
+    color: #e2c801;
+  }
+  &-cancel {
+    color: #d00000;
+  }
+  &-success {
+    color: #119803;
+  }
+  span.title-status {
+    margin-right: 5px;
+  }
+}
+
+@include tablet {
+  .account {
+    &-side {
+      padding: 10px 10px 0 6px;
+
+      &_intro {
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+        margin-bottom: 12px;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+
+        .avt {
+          margin-right: 6px;
+        }
+
+        .name {
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+        }
+      }
+    }
+
+    &-menu {
+      margin-top: 10px;
+
+      &_item {
+        padding: 6px 0;
+
+        .icons {
+          color: #888;
+          margin-right: 4px;
+          font-size: 16px;
+        }
+
+        .title {
+          font-size: 16px;
+          font-weight: 500;
+        }
+
+        .submenu {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    &-component {
+      padding: 10px 10px 0 10px;
+
+      &_item {
+        margin-bottom: 13px;
+        padding-left: 12px;
+      }
+    }
+
+    .profile-left {
+      margin: 20px 0;
+
+      &_label {
+        padding: 0 !important;
+      }
+    }
+
+    .profile-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 16px;
+      margin: 40px 0;
+
+      .avt-r {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 26px;
+      }
+
+      .upload {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    h2 {
+      font-size: 23px;
+    }
+
+    .inputRow {
+      padding: 0;
+    }
+
+    .addressList {
+      &-item {
+        padding: 12px;
+        margin-top: 12px;
+
+        &_row {
+          .flex1 {
+            padding-right: 16px;
+          }
+
+          .flex3 {
+            &_btn {
+              padding: 2px 6px;
+            }
+          }
+        }
+
+        &_btn {
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .ant-table-wrapper {
+      max-width: max-content !important;
+    }
+
+    .ant-table {
+      width: 100%;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+
+      .ant-table-container {
+        width: 800px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

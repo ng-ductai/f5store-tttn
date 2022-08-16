@@ -1,0 +1,25 @@
+.ForgotPW {
+  max-width: 350px;
+  min-height: 100vh;
+}
+
+.foot{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 40px;
+
+}
+
+.continue{
+  font-weight: 600;
+  color: rgb(4, 138, 200);
+  font-size: 16px;
+
+}
+
+@media screen and (min-width: 480px) {
+  .ForgotPW {
+    max-width: 450px;
+  }
+}

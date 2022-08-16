@@ -1,0 +1,39 @@
+.signUp {
+  min-height: 100vh;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+
+  .gender-field .ant-select-selection-placeholder {
+    color: #888;
+  }
+
+  .ant-select-selector {
+    border: none !important;
+  }
+
+  .ant-input-password-icon {
+    color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+.acc {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(56, 182, 255);
+  padding: 0 4px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+  .signUp {
+    .or-option,
+    &-submit-btn,
+    .login-gg {
+      width: 80% !important;
+    }
+  }
+}

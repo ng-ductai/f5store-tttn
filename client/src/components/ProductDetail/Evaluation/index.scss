@@ -1,0 +1,40 @@
+.evaluation {
+  &-title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .overview {
+    display: flex;
+    padding: 16px 0;
+    border-bottom: dashed 1px #ddd;
+
+    &-total {
+      flex-basis: 140px;
+      border-right: dashed 1px #ddd;
+    }
+
+    &-detail {
+      flex-direction: column-reverse;
+      max-width: 324px;
+    }
+  }
+
+  .ant-rate-star:not(:last-child) {
+    margin-right: 4px;
+  }
+
+  .fullname {
+    color: #444;
+    font-size: 18px;
+  }
+
+  .dateCmt {
+    color: #777;
+  }
+
+  .ant-comment-avatar img {
+    width: 60px;
+    height: 60px;
+  }
+}

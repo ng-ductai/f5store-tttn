@@ -1,0 +1,131 @@
+@import "../../scss/index.scss";
+
+.payment {
+  &-addr {
+    padding: 16px 20px;
+    margin-bottom: 16px;
+
+    &_title {
+      font-size: 20px;
+      font-weight: 500;
+      .icon-map {
+        color: rgb(248, 133, 11);
+      }
+    }
+
+    &_table {
+      font-size: 18px;
+      padding: 12px 0 4px 20px;
+    }
+
+    &_note {
+      font-size: 18px;
+    }
+  }
+
+  &-info {
+    padding: 12px;
+
+    img {
+      width: 85px;
+      height: 80px;
+    }
+
+    &_name {
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+
+    .nameProduct1 {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      font-size: 20px;
+      line-height: 26px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 6px;
+      max-height: 26px;
+    }
+  }
+
+  .method {
+    &-label {
+      font-size: 18px;
+    }
+    &-content {
+      font-size: 15px;
+    }
+  }
+
+  .item-active {
+    border: solid 1px $main-color;
+    background-color: rgba($main-color, 0.05);
+  }
+}
+
+@include tablet {
+  .payment {
+    &-addr {
+      padding: 10px 10px;
+      margin-bottom: 10px;
+
+      &_title {
+        font-size: 18px;
+      }
+
+      &_table {
+        font-size: 16px;
+        padding: 8px 0 0px 10px;
+      }
+
+      &_note {
+        font-size: 18px;
+      }
+    }
+
+    &-info {
+      padding: 10px 8px;
+
+      img {
+        width: 75px;
+        height: 70px;
+      }
+
+      &_name {
+        padding-top: 4px;
+      }
+
+      .nameProduct1 {
+        font-size: 18px;
+        line-height: 20px;
+        max-height: 20px;
+      }
+    }
+
+    .method {
+      &-label {
+        font-size: 18px;
+      }
+      &-content {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.note {
+  width: 100%;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-5 {
+  flex: 5;
+}

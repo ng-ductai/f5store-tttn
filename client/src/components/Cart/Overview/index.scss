@@ -1,0 +1,125 @@
+@import "../../../scss/index.scss";
+
+.cartItem {
+  display: flex;
+  padding: 10px 14px;
+  justify-content: space-between;
+  align-items: center;
+
+  .img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .name {
+    padding: 10px;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-old {
+      font-size: 16px;
+      text-decoration: line-through;
+      color: #888;
+    }
+
+    &-new {
+      font-size: 18px;
+      color: #333;
+    }
+  }
+
+  .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-del {
+    color: #ff0000;
+    font-size: 18px;
+    transition: all 0.25s;
+    &:hover,
+    &:active {
+      transform: scale(1.15);
+    }
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.nameProduct {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  font-size: 18px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 6px;
+  max-height: 24px;
+}
+
+
+@include tablet {
+  .cartItem {
+    padding: 10px 8px;
+
+    .flex-1 {
+      flex: 1;
+    }
+
+    .flex-2 {
+      flex: 2;
+    }
+
+    .flex-5 {
+      flex: 4;
+    }
+
+    .nameProduct {
+      font-size: 16px;
+      max-height: 22px;
+    }
+
+    .img {
+      width: 70px;
+      height: 70px;
+    }
+
+    .name {
+      padding: 10px 5px;
+    }
+
+    .price {
+      &-old {
+        font-size: 14px;
+      }
+
+      &-new {
+        font-size: 14px;
+      }
+    }
+
+    .icon-del {
+      font-size: 16px;
+    }
+
+    .ant-input-number {
+      width: 70px;
+    }
+  }
+}

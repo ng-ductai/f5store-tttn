@@ -1,0 +1,96 @@
+.footer {
+  padding: 25px 150px;
+  background-color: rgb(20, 20, 20);
+
+  @include tablet {
+    padding: 20px 100px;
+  }
+  &__contacts {
+    &-title {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: rgb(0, 148, 2);
+      text-transform: uppercase;
+
+      @include tablet {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  &__contact1 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__contact1-icon svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 10px;
+    fill: rgb(212, 212, 212);
+  }
+
+  &__contact-txt,
+  a,
+  p {
+    font-size: 1.3rem;
+    color: #ccc;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 6px;
+
+    @include tablet {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (hover: hover) {
+    &__contact-txt:hover,
+    a:hover {
+      color: rgb(233, 245, 8);
+    }
+  }
+
+  &__icons {
+    margin-top: 10px;
+    svg {
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-right: 12px;
+    }
+    &-1 svg {
+      fill: #2482fb;
+    }
+    &-2 svg {
+      fill: #5da9dd;
+    }
+    &-3 svg {
+      fill: #f56040;
+    }
+    &-4 svg {
+      fill: #ff0000;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer__icons svg {
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+      transition: all 0.35s;
+      transform: rotate(15deg);
+    }
+  }
+}
