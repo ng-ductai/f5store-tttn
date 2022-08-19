@@ -263,7 +263,7 @@ const AddProduct = () => {
                     size="large"
                     placeholder="Mã sản phẩm *"
                     suffix={
-                      <Tooltip title="SKU200500854">
+                      <Tooltip title="DTIP0005">
                         <InfoCircleOutlined style={{ color: suffixColor }} />
                       </Tooltip>
                     }
