@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+  <h1 align="center"><b>F5 STORE WEBSITE</b></h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- ## F5 Store là một website bán điện thoại và phụ kiện.
 
-## Available Scripts
+- ## Trang client
 
-In the project directory, you can run:
+  - ### Link demo: https://store29.netlify.app/
+  - ### Video demo: https://youtu.be/XMT_zMzT3aU
+  - ### Chức năng
+    - Đăng ký, đăng nhập.
+    - Hiển thị các sản phẩm nổi bật và tất cả sản phẩm hiện có.
+    - Tìm kiếm, lọc sản phẩm theo yêu cầu.
+    - Hiển thị chi tiết sản phẩm và đề xuất các sản phẩm liên quan.
+    - Người dùng có thể bình luận về sản phẩm.
+    - Quản lý sản phẩm trong giỏ hàng.
+    - Đặt hàng.
+    - Quản lý tài khoản người dùng, lịch sử mua hàng.
+    - Có responsive cho tablet.
+    
+    ![Untitled1](https://user-images.githubusercontent.com/67097279/185683811-fa5f9e39-3bed-4858-8c0a-5759298c33dc.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ## Trang dashboard
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - ### Link demo: https://store29-dashboard.netlify.app/
+  - ### Video demo: https://youtu.be/jwNE4sj36HI
 
-### `npm test`
+  - ### Chức năng
+    - Đăng nhập.
+    - Thống kê số lượng sản phẩm, người dùng, đơn hàng,...
+    - Thống kê doanh thu theo tháng, theo năm...
+    - Quản lý sản phẩm.
+    - Quản lý khách hàng, quản trị viên.
+    - Quản lý đơn hàng.
+    - Gửi email xác nhận đơn hàng cho khách hàng.
+    - Có responsive cho tablet.
+    
+![Untitled](https://user-images.githubusercontent.com/67097279/185683129-553f0d43-fd97-4b36-8d01-75bc61721245.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ## Công nghệ
 
-### `npm run build`
+  - ### Back-end, Database
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - NodeJS, ExpressJS.
+    - MongoDB, mongooseJS.
+    - Nodemailer.
+    - Passport.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - ### Front-end
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - ReactJS, React Hook, Yup.
+    - Redux + Redux Thunk.
+    - Ant Design, Css, Scss.
+    - Restful API với Axios.
 
-### `npm run eject`
+  - ### Storage, Hosting, Cloud
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    - MongoDB Atlas.
+    - Heroku Hosting.
+    - Cloudinary.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - ### Tool
+    - Git, Github.
+    - IDE: Visual Studio Code.
