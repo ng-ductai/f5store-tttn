@@ -23,7 +23,7 @@
 - ## Trang dashboard
 
   - ### Link demo: https://store29-dashboard.netlify.app/
-  - ### Video demo: https://youtu.be/jwNE4sj36HI
+  - ### Video demo: https://youtu.be/d4EscCXMUyQ
 
   - ### Chức năng
     - Đăng nhập.
