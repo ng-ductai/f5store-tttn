@@ -5,7 +5,7 @@
 - ## Trang client
 
   - ### Link demo: https://store29.netlify.app/
-  - ### Video demo: https://youtu.be/XMT_zMzT3aU
+  - ### Video demo: https://drive.google.com/file/d/1ZeOmlZJ0EB5THaYPWOnImLWBhXNWO-DH/view?usp=sharing
   - ### Chức năng
     - Đăng ký, đăng nhập.
     - Hiển thị các sản phẩm nổi bật và tất cả sản phẩm hiện có.
@@ -23,7 +23,7 @@
 - ## Trang dashboard
 
   - ### Link demo: https://store29-dashboard.netlify.app/
-  - ### Video demo: https://youtu.be/d4EscCXMUyQ
+  - ### Video demo: https://drive.google.com/file/d/1BEfs9ywP0BN1a1oH0Uz--kMtnts1GK6z/view?usp=sharing
 
   - ### Chức năng
     - Đăng nhập.
