@@ -23,12 +23,13 @@
 - ## Trang dashboard
 
   - ### Link demo: https://store29-dashboard.netlify.app/
+  - Account test: admin@gmail.com - Admin29
   - ### Video demo: https://drive.google.com/file/d/1BEfs9ywP0BN1a1oH0Uz--kMtnts1GK6z/view?usp=sharing
 
   - ### Chức năng
     - Đăng nhập.
     - Thống kê số lượng sản phẩm, người dùng, đơn hàng,...
-    - Thống kê doanh thu theo tháng, theo năm...
+    - Thống kê doanh thu theo tháng, theo năm,...
     - Quản lý sản phẩm.
     - Quản lý khách hàng, quản trị viên.
     - Quản lý đơn hàng.
