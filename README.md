@@ -23,7 +23,7 @@
 - ## Trang dashboard
 
   - ### Link demo: https://store29-dashboard.netlify.app/
-  - Account test: admin@gmail.com - Admin29
+  - ### Account test: admin@gmail.com - Admin29
   - ### Video demo: https://drive.google.com/file/d/1BEfs9ywP0BN1a1oH0Uz--kMtnts1GK6z/view?usp=sharing
 
   - ### Chức năng
