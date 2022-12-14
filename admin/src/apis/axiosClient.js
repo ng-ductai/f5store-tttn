@@ -3,6 +3,7 @@ import queryString from "query-string";
 
 /* const baseURL =  process.env.REACT_APP_API_URL;*/
 /* const baseURL =  "http://localhost:3300/apis";  */
+/* const baseURL =  "https://f5store.herokuapp.com/apis"; */
  const baseURL = "https://f5server.vercel.app/apis"; 
 
 //Set up default config for http request
